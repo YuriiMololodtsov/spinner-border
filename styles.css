@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  gap: 34px;
+  text-align: center;
+  padding: 34px;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: black red black black;
+  border-width: 7px 7px 7px 7px;
+  border-style: solid;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(365deg);
+  }
+}
+
+.scale {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: black black black black;
+  border-width: 7px 7px 7px 7px;
+  border-style: solid;
+  animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
